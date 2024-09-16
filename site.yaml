@@ -2,6 +2,7 @@
 - hosts: Bastions_Servers
   become: true
   tasks:
-    - name: Print OS info
-      ansible.builtin.package:
-        name: apache2
+    - name: Print List Directory
+      ansible.builtin.find:
+        paths: /home/devops
+      register: out
