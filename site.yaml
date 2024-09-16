@@ -4,5 +4,5 @@
   tasks:
     - name: Print List Directory
       ansible.builtin.find:
-        paths: /home/devops
+        paths: /etc
       register: out
