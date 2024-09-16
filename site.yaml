@@ -3,6 +3,4 @@
   become: true
   tasks:
     - name: Print List Directory
-      ansible.builtin.find:
-        paths: /etc
-      register: out
+      shell: ls
