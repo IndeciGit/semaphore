@@ -1,1 +1,6 @@
 ---
+- hosts: Bastions_Servers
+  become: false
+  tasks:
+    - name: Print List Directory
+      shell: /opt/fondes/qa/scripts/deployactaservice.sh
