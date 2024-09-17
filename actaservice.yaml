@@ -3,4 +3,5 @@
   become: false
   tasks:
     - name: Desplegando el servicio
-      shell: /opt/fondes/qa/scripts/deployactaservice.sh
+      script: /opt/fondes/qa/scripts/deployactaservice.sh
+      register: out
