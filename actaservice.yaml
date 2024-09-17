@@ -4,5 +4,5 @@
   tasks:
     - name: Desplegando el servicio
       shell: |
-      echo "Desplegando Acta Service"
-      /opt/fondes/qa/scripts/deployactaservice.sh
+        echo "Desplegando Acta Service"
+        /opt/fondes/qa/scripts/deployactaservice.sh
