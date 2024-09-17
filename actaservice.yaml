@@ -3,5 +3,6 @@
   become: false
   tasks:
     - name: Desplegando el servicio
-      script: /opt/fondes/qa/scripts/deployactaservice.sh
-      register: out
+      shell: |
+      echo "Desplegando Acta Service"
+      /opt/fondes/qa/scripts/deployactaservice.sh
