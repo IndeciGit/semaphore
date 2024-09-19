@@ -1,8 +1,0 @@
----
-- hosts: Bastions_Servers
-  become: false
-  tasks:
-    - name: Desplegando el servicio
-      shell: |
-        echo "Desplegando Gateway Service"
-        /opt/fondes/qa/scripts/deploygatewayservice.sh
